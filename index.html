@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Which Insurance Superhero Are You?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which Insurance Superhero Are You?</h1>
+        <img src="superhero.png" alt="Superhero Image" class="superhero-img">
+        <p>Discover which insurance superhero matches your personality and find out if you have what it takes to join our team of heroes at Novidea! Answer these fun questions to see where you fit in our mission to protect and serve our clients.</p>
+        <div id="quiz">
+            <div class="question-container" id="question1">
+                <h2>What is your superpower?</h2>
+                <input type="radio" name="q1" value="A"> Problem-solving with lightning speed.<br>
+                <input type="radio" name="q1" value="B"> Empathy and understanding others' needs.<br>
+                <input type="radio" name="q1" value="C"> Exceptional organizational skills.<br>
+                <input type="radio" name="q1" value="D"> Ability to communicate clearly and effectively.<br>
+                <button onclick="nextQuestion(1)">Next</button>
+            </div>
+            <div class="question-container" id="question2" style="display: none;">
+                <h2>What’s your ideal way to spend a weekend?</h2>
+                <input type="radio" name="q2" value="A"> Volunteering at a community event.<br>
+                <input type="radio" name="q2" value="B"> Catching up on the latest industry trends.<br>
+                <input type="radio" name="q2" value="C"> Planning a fun outing for friends and family.<br>
+                <input type="radio" name="q2" value="D"> Relaxing with a good book or movie.<br>
+                <button onclick="nextQuestion(2)">Next</button>
+            </div>
+            <div class="question-container" id="question3" style="display: none;">
+                <h2>How do you handle a difficult situation?</h2>
+                <input type="radio" name="q3" value="A"> Break it down and tackle it step-by-step.<br>
+                <input type="radio" name="q3" value="B"> Listen to everyone involved and find a compromise.<br>
+                <input type="radio" name="q3" value="C"> Create a detailed plan and follow through.<br>
+                <input type="radio" name="q3" value="D"> Talk it through with the team to find the best solution.<br>
+                <button onclick="nextQuestion(3)">Next</button>
+            </div>
+            <div class="question-container" id="question4" style="display: none;">
+                <h2>What’s your go-to work snack?</h2>
+                <input type="radio" name="q4" value="A"> Protein bars to keep my energy up.<br>
+                <input type="radio" name="q4" value="B"> Fresh fruit for a healthy boost.<br>
+                <input type="radio" name="q4" value="C"> Nuts and seeds for a quick, nutritious bite.<br>
+                <input type="radio" name="q4" value="D"> Chocolate for a sweet treat.<br>
+                <button onclick="nextQuestion(4)">Next</button>
+            </div>
+            <div class="question-container" id="question5" style="display: none;">
+                <h2>Which motto resonates with you the most?</h2>
+                <input type="radio" name="q5" value="A"> "Every problem has a solution."<br>
+                <input type="radio" name="q5" value="B"> "People first, always."<br>
+                <input type="radio" name="q5" value="C"> "A place for everything and everything in its place."<br>
+                <input type="radio" name="q5" value="D"> "Communication is key."<br>
+                <button onclick="nextQuestion(5)">Next</button>
+            </div>
+            <div class="question-container" id="question6" style="display: none;">
+                <h2>If you could have any office view, what would it be?</h2>
+                <input type="radio" name="q6" value="A"> A bustling cityscape.<br>
+                <input type="radio" name="q6" value="B"> A serene beach.<br>
+                <input type="radio" name="q6" value="C"> A picturesque mountain range.<br>
+                <input type="radio" name="q6" value="D"> A lush, green park.<br>
+                <button onclick="showResults()">See Results</button>
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Your Insurance Superhero Result</h2>
+            <p id="result-text"></p>
+            <p>Ready to join our team of insurance superheroes? Check out our open positions and see how you can make a difference at Novidea.</p>
+            <a href="https://novidea.com/careers/?coref=1.10.rD6_212&t=1717337606817">Click here to apply now!</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
